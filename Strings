@@ -1,0 +1,74 @@
+string myString = "A string.";
+
+//We can also use a Java object approach to create a string. In C#, a string is an alias for the String object.
+
+String myString = "A string.";
+
+//TYPES OF NULL STRINGS
+string emptyString = String.Empty;
+string anotherEmptyString = "";
+
+
+//CONCATINATE
+
+string firstName = "Eric";
+string lastName = "Smith";
+string fullName = firstName + " " + lastName;
+
+
+string sentence = "I like to play ";
+sentence += "chess."; //-------------------------------FUCKING COOL AS HELL MAN 
+Console.WriteLine(sentence);
+
+//tostring
+int integer = 1;
+string ourString = "Something to be replaced by an int";
+ourString = integer.ToString();
+System.Console.WriteLine(ourString);
+
+//Mapping outputs to streings from vars 
+int x = 1, y = 2;
+int sum = x + y;
+string sumCalculation = String.Format("{0} + {1} = {2}", x, y, sum);
+Console.WriteLine(sumCalculation);
+
+//substrings
+string fullString = "full string";
+string partOfString = fullString.Substring(5);
+string shorterPart = fullString.Substring(5, 3);
+Console.WriteLine(partOfString);
+Console.WriteLine(shorterPart);
+
+//replace 
+string name = "John Doe";
+string newName = name.Replace("John", "Eric");
+Console.WriteLine(newName);
+
+
+//Index of
+//The IndexOf string method finds the first occurrence of a string in a larger string. If the string is not found, -1 is returned.
+
+string fruit = "apple,orange,banana";
+Console.WriteLine("Found orange in position: " + fruit.IndexOf("orange"));
+Console.WriteLine("Found lemon in position: " + fruit.IndexOf("lemon"));
+
+//-----------------------------------Example 
+using System;
+
+public class Hello
+{
+    public static void Main()
+    {
+        string firstName = "John";
+        string lastName = "Doe";
+        int age = 27;
+		
+        
+        string sentence = String.Format("{0} {1} is {2} years old.", firstName, lastName, age);
+        // TODO: change this
+
+        Console.WriteLine(sentence);
+
+    }
+}
+

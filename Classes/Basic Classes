@@ -1,0 +1,45 @@
+class myClass{
+}
+
+class myClass{
+}
+class MainClass{
+  public static void Main(){
+    myClass myObject = new myClass();
+  }
+}
+
+using System;
+class myClass{
+  public string test = "This works!";
+}
+class MainClass{
+  public static void Main(){
+    myClass myObject = new myClass();
+    Console.WriteLine(myObject.test);
+  }
+}
+
+//----------------------------example Make a class car with the properties numTires = 4, year = 2000, and runs = true, and create three instances of it: car1, car2, and car3.
+
+using System;
+
+class car{
+    public int numTires = 4;
+    public int year =2000;
+    public bool runs = true;
+}
+public class MainClass{
+    public static void Main(){
+        
+        car car1 = new car();
+        car car2= new car();
+        car car3= new car();
+        
+        
+        // Test code
+        Console.WriteLine(car1.numTires);
+        Console.WriteLine(car2.year);
+        Console.WriteLine(car3.runs);
+    }
+}

@@ -1,0 +1,37 @@
+while([conditions to be checked])
+{
+[Code to execute]
+}
+
+
+
+int n = 0;
+
+while( n == 0)
+{
+    Console.WriteLine("N is 0");
+    n++;
+}
+
+
+//Print X to the console N time using a while loop
+using System;
+
+public class Functions
+{
+    public static void Main()
+    {
+        string x = "Hi";
+        int n = 10;
+        int i =0;
+        while( i < n){
+                Console.WriteLine(x);
+        		i++;
+            
+        }
+        //write while loop here
+    }
+
+}
+
+

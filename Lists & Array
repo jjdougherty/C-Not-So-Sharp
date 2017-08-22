@@ -1,0 +1,119 @@
+int[] nums = { 1, 2, 3, 4, 5 };
+int[] nums = new int[10];
+
+int[] nums = new int[10];
+Console.WriteLine(nums.Length); //10
+
+int[] nums = new int[10];
+int firstNumber = nums[0];
+int secondNumber = nums[1];
+nums[2] = 10;
+//----------------------------------------------
+//Multidem arrays
+
+int[,] matrix = new int[2,2];
+matrix[0,1] = 1;
+matrix[1,1] = 2;
+
+int[,] predefinedmatrix = new int[2,2] {{1,2},{3,4}};
+//--------------------------------------------------------
+using System;
+
+public class Tutorial
+{
+  public static void Main()
+  {
+  // write your code here
+  string[] fruits = new string[3];
+
+  fruits[0] = "apple";
+  fruits[1] ="banana";
+  fruits[2] = "orange";
+// test code
+  Console.WriteLine(fruits[0]);
+  Console.WriteLine(fruits[1]);
+  Console.WriteLine(fruits[2]);
+  }
+}
+"apple
+banana
+orange
+"
+//------------------------------------
+//LISTS 
+//CAN CHANGE SIZE AT ANY TIME VS THAT SHIT THAT ARRAYS HAVE WHERE ITS FIXED
+
+List<int> numbers = new List<int>();
+List<string> words = new List<string>();
+
+List<int> numbers = new List<int>();
+numbers.Add(1);
+numbers.Add(2);
+numbers.Add(3);
+
+//so you can add an array into a list like this 
+List<int> numbers = new List<int>();
+int[] array = new int[] { 1, 2, 3 };
+numbers.AddRange(array);
+
+
+//------------------------------So you can remove from a list well without worry 
+List<string> fruits = new List<string>();
+// add fruits
+fruits.Add("apple");
+fruits.Add("banana");
+fruits.Add("orange");
+
+// now remove the banana
+fruits.Remove("banana");
+Console.WriteLine(fruits.Count);
+
+
+//-----------------------------------Same can be done with RemoveAt();
+List<string> fruits = new List<string>();
+// add fruits
+fruits.Add("apple");
+fruits.Add("banana");
+fruits.Add("orange");
+
+// now remove the banana
+fruits.RemoveAt(1);
+Console.WriteLine(fruits.Count);
+
+
+//-0----------------------Joining a list to another list 
+List<string> food = new List<string>();
+food.Add("apple");
+food.Add("banana");
+
+List<string> vegetables = new List<string>();
+vegetables.Add("tomato");
+vegetables.Add("carrot");
+
+food.AddRange(vegetables);
+Console.WriteLine(food.Count);
+//--------------------------------------EXAMPLE: Construct a list of the first 5 prime numbers (2, 3, 5, 7, 11) called primeNumbers.
+using System;
+using System.Collections.Generic;
+
+public class Hello
+{
+    public static void Main()
+    {
+        // TODO: add your code here
+		List<int> primeNumbers = new List<int>();
+  primeNumbers.Add(2);
+  primeNumbers.Add(3);
+  primeNumbers.Add(5);
+  primeNumbers.Add(7);
+  primeNumbers.Add(11);
+        // test code
+        Console.WriteLine(primeNumbers.Count);
+        Console.WriteLine(primeNumbers[0]);
+        Console.WriteLine(primeNumbers[1]);
+        Console.WriteLine(primeNumbers[2]);
+        Console.WriteLine(primeNumbers[3]);
+        Console.WriteLine(primeNumbers[4]);
+
+    }
+}

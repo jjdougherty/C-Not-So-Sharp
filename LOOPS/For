@@ -1,0 +1,58 @@
+for( [variable to count iterations] ; [conditions checked for] ; [code to execute every loop])
+{
+
+}
+
+int i;
+
+for( i = 0; i < 10; i++)
+{
+
+}
+
+
+for( int i = 0; i < 10; i++)
+
+
+//For loops are used to allow you to repeat sections of code a fixed, or variable amount of times. This allows you to make your code more compact and clean.
+//There are several statements you can use to control a loop:
+
+break;
+ //ex2
+for(int i = 0; i < 16; i++)
+{
+
+    if(i == 12)
+    {
+        break;    
+    }
+}
+//continue vs break
+for(int i = 0; i < 16; i++)
+{
+
+    if(i % 2 == 1)
+    {
+        continue;
+    }
+
+    Console.WriteLine(i);
+
+}
+
+
+//Print the value of variable X to the screen N number of times
+using System;
+
+public class Functions
+{
+    public static void Main()
+    {
+        string x = "Hi";
+        int n = 10;
+        for(int i =0; i < n; i++){Console.WriteLine(x);}
+        // write for loop here
+    }
+
+}
+
